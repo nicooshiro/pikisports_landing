@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikisports - Movimiento sin Fricción</title>
+    <meta name="description" content="Pikisports es la aplicación que te ayuda a integrar la actividad física de forma inmediata, simple y gamificada en tu vida cotidiana.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SVG Filter to remove white background from the logo -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" width="0" height="0">
+        <defs>
+            <filter id="remove-white-bg" color-interpolation-filters="sRGB">
+                <feColorMatrix type="matrix" values="
+                    1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    -4 -4 -4 12 -2
+                " />
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo-wrap">
+                <img src="logo_pikirun.png" alt="Pikisports Logo" class="brand-logo-img">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#stats-globales">Estadísticas</a></li>
+                </ul>
+            </nav>
+            <a href="#descargar" class="btn btn-primary btn-small">Descargar App</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-tag">Movilidad + Gamificación</span>
+                <h1 class="gradient-text">Activa tu cuerpo. <br><span class="glow-text" style="color: var(--accent); -webkit-text-fill-color: var(--accent);">Sin planificación rígida.</span></h1>
+                <p>Combate el sedentarismo urbano integrando desafíos rápidos y adaptados a tu contexto directo. Sube escaleras, camina o estira justo en el momento y lugar donde te encuentras. Sencillo, motivador e inmediato.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#stats-globales" class="btn btn-primary">Ver Estadísticas <span style="margin-left: 8px;">→</span></a>
+                    <a href="#caracteristicas" class="btn btn-secondary">Saber Más</a>
+                </div>
+
+                <div style="margin-bottom: 2rem;"></div>
+            </div>
+
+            <!-- Hero 3D Rotating Phones with Neon Orbits (Crypto Style) -->
+            <div class="hero-image-container">
+                <div class="phone-3d-container">
+                    <!-- SVG Orbits -->
+                    <svg class="orbits-svg" viewBox="0 0 500 500">
+                        <path class="orbit-path path-1" d="M 50 150 C 150 50, 350 50, 450 150 C 450 250, 250 450, 50 150" />
+                        <path class="orbit-path path-2" d="M 450 350 C 350 450, 150 450, 50 350 C 50 250, 250 50, 450 350" />
+                    </svg>
+                    
+                    <!-- Floating Orbs -->
+                    <div class="orbit-dot dot-1"></div>
+                    <div class="orbit-dot dot-2"></div>
+
+                    <!-- Group container rotating together around its own axis on scroll -->
+                    <div class="phone-3d-group" id="scroll-phone-group">
+                        <!-- Phone 1 (Shows Home Screen) -->
+                        <div class="phone-3d phone-1">
+                            <div class="phone-3d-notch"></div>
+                            <div class="phone-3d-screen">
+                                <img src="fotosapp/home.png" alt="Pikisports Home">
+                            </div>
+                        </div>
+
+                        <!-- Phone 2 (Shows Desafios Screen) -->
+                        <div class="phone-3d phone-2">
+                            <div class="phone-3d-notch"></div>
+                            <div class="phone-3d-screen">
+                                <img src="fotosapp/desafios.png" alt="Pikisports Desafíos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Horizontal Marquee Banner -->
+    <div class="marquee-banner">
+        <div class="marquee-content">
+            <span>Movilidad + Gamificación ⚡ Combate el Sedentarismo ⚡ Retos de 5 a 10 Minutos ⚡ Cero Fricción de Inicio ⚡ Sin Equipamiento ⚡ Sube de Nivel y Gana XP ⚡ Movimiento Cotidiano ⚡&nbsp;</span>
+            <span>Movilidad + Gamificación ⚡ Combate el Sedentarismo ⚡ Retos de 5 a 10 Minutos ⚡ Cero Fricción de Inicio ⚡ Sin Equipamiento ⚡ Sube de Nivel y Gana XP ⚡ Movimiento Cotidiano ⚡&nbsp;</span>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="caracteristicas" style="border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <h2>¿Por qué Pikisports?</h2>
+                <p>Nuestra metodología de "Movilidad + Gamificación" elimina los pretextos clásicos de la falta de tiempo.</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card reveal-on-scroll delay-100">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Activación Contextual</h3>
+                    <p>La app reconoce dónde estás (Casa, Oficina, Facultad) y qué elementos tienes disponibles para proponerte retos físicos inmediatos que no requieren equipamiento especial.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card reveal-on-scroll delay-200">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Ejercicios de 5 a 15 Minutos</h3>
+                    <p>No necesitas bloques de 1 hora libre. Nuestras micro-rutinas están diseñadas para encajar en pequeñas pausas del día a día, reduciendo la fricción para empezar a entrenar.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card reveal-on-scroll delay-300">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3>Gamificación y Recompensa</h3>
+                    <p>Gana puntos de experiencia (XP) completando retos rápidos, desbloquea logros temáticos, sube de nivel y mantén tu racha de días activos. Verás tu progreso inmediatamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Gallery Showcase -->
+    <section class="gallery-section" id="galeria" style="border-top: 1px solid var(--border-color); background: rgba(255, 255, 255, 0.01);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explora la Interfaz de la App</h2>
+                <p>Diseñada con un enfoque de alto contraste y usabilidad óptima para motivarte en tu día a día.</p>
+            </div>
+            
+            <div class="gallery-slider-wrap">
+                <div class="gallery-slider">
+                    <!-- Card 1: Home -->
+                    <div class="gallery-card">
+                        <div class="gallery-device">
+                            <img src="fotosapp/home.png" alt="Dashboard Principal">
+                        </div>
+                        <h4>Inicio</h4>
+                        <p>Desafío diario, accesos rápidos y progreso de nivel.</p>
+                    </div>
+                    <!-- Card 2: Desafíos -->
+                    <div class="gallery-card">
+                        <div class="gallery-device">
+                            <img src="fotosapp/desafios.png" alt="Desafíos de la App">
+                        </div>
+                        <h4>Desafíos</h4>
+                        <p>Retos diarios, de comunidad y logros.</p>
+                    </div>
+                    <!-- Card 3: Planes -->
+                    <div class="gallery-card">
+                        <div class="gallery-device">
+                            <img src="fotosapp/planes.png" alt="Planes de Entrenamiento">
+                        </div>
+                        <h4>Planes</h4>
+                        <p>Rutinas de ejercicio por grupos musculares.</p>
+                    </div>
+                    <!-- Card 4: Comunidad -->
+                    <div class="gallery-card">
+                        <div class="gallery-device">
+                            <img src="fotosapp/comunidad.png" alt="Feed Social">
+                        </div>
+                        <h4>Comunidad</h4>
+                        <p>Muro social para compartir y dar likes.</p>
+                    </div>
+                    <!-- Card 5: Bienestar -->
+                    <div class="gallery-card">
+                        <div class="gallery-device">
+                            <img src="fotosapp/bienestar.png" alt="Centro de Bienestar">
+                        </div>
+                        <h4>Bienestar</h4>
+                        <p>Consejos y recetas populares de salud.</p>
+                    </div>
+                    <!-- Card 6: Logros -->
+                    <div class="gallery-card">
+                        <div class="gallery-device">
+                            <img src="fotosapp/logros.png" alt="Logros Desbloqueados">
+                        </div>
+                        <h4>Logros</h4>
+                        <p>Historial de medallas y rachas ganadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Global Stats Board Section -->
+    <section class="tech-stats-section reveal-on-scroll" id="stats-globales" style="border-top: 1px solid var(--border-color); padding: 5rem 0;">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+                <span class="hero-tag" style="background: rgba(204, 255, 0, 0.1); border-color: rgba(204, 255, 0, 0.25); color: var(--accent);">Impacto Real</span>
+                <h2 class="glow-text">Pikisports en Números</h2>
+                <p>Nuestra metodología de micro-activaciones físicas genera hábitos reales de forma constante.</p>
+            </div>
+
+            <div class="tech-stats-grid">
+                <!-- Stat Card 1: Acceptance Rate -->
+                <div class="tech-stat-card reveal-on-scroll delay-100">
+                    <div class="card-glow-indicator"></div>
+                    <div class="stat-icon">📈</div>
+                    <h3 class="stat-number gradient-text">80.3%</h3>
+                    <p class="stat-label">Aceptación Inicial</p>
+                    <p class="stat-desc">De los encuestados usaría una app con rutinas integradas a su día a día (caminar, escaleras).</p>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar-fill" style="width: 80.3%;"></div>
+                    </div>
+                </div>
+
+                <!-- Stat Card 2: Time Barrier -->
+                <div class="tech-stat-card reveal-on-scroll delay-200">
+                    <div class="card-glow-indicator blue"></div>
+                    <div class="stat-icon">⏱️</div>
+                    <h3 class="stat-number" style="color: var(--accent-blue); -webkit-text-fill-color: var(--accent-blue);">42.4%</h3>
+                    <p class="stat-label">Barrera del Tiempo</p>
+                    <p class="stat-desc">Es la principal barrera percibida por los usuarios para entrenar en la vida cotidiana.</p>
+                    <div class="stat-radial-container">
+                        <svg width="80" height="80" viewBox="0 0 100 100" class="radial-svg">
+                            <circle class="radial-bg" cx="50" cy="50" r="40" />
+                            <circle class="radial-progress" cx="50" cy="50" r="40" stroke-dasharray="251" stroke-dashoffset="145" />
+                        </svg>
+                        <span class="radial-val">42%</span>
+                    </div>
+                </div>
+
+                <!-- Stat Card 3: Motivation Source -->
+                <div class="tech-stat-card reveal-on-scroll delay-300">
+                    <div class="card-glow-indicator"></div>
+                    <div class="stat-icon">🎯</div>
+                    <h3 class="stat-number gradient-text">39.4%</h3>
+                    <p class="stat-label">Foco en el Progreso</p>
+                    <p class="stat-desc">De los usuarios afirma que ver su avance de forma clara es su principal motor de constancia.</p>
+                    <div class="stat-mini-chart">
+                        <svg width="120" height="40" viewBox="0 0 120 40">
+                            <path d="M 0 30 Q 15 10, 30 20 T 60 10 T 90 25 T 120 5" fill="none" stroke="var(--accent)" stroke-width="3" filter="drop-shadow(0 0 4px var(--accent))" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Stat Card 4: Sample size -->
+                <div class="tech-stat-card reveal-on-scroll delay-400">
+                    <div class="card-glow-indicator orange"></div>
+                    <div class="stat-icon">👥</div>
+                    <h3 class="stat-number" style="color: #ff9f0a; -webkit-text-fill-color: #ff9f0a;">66</h3>
+                    <p class="stat-label">Muestra de Estudio</p>
+                    <p class="stat-desc">Respuestas reales de jóvenes de 18 a 24 años analizadas para reducir la fricción de inicio.</p>
+                    <div class="stat-bar-container orange">
+                        <div class="stat-bar-fill" style="width: 66%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive App Simulator / Demo Section -->
+    <section class="interactive-demo reveal-on-scroll" id="demo" style="display: none !important;">
+        <div class="container demo-wrapper">
+            <div class="demo-info">
+                <span class="hero-tag" style="background: rgba(0, 240, 255, 0.1); border-color: rgba(0, 240, 255, 0.25); color: var(--accent-blue);">Demo Interactiva</span>
+                <h2 class="glow-text">Prueba la experiencia</h2>
+                <p>Experimenta cómo funciona el motor inteligente de Pikisports directamente desde esta simulación web. Configura tu entorno y simula una activación rápida.</p>
+                
+                <div class="demo-steps">
+                    <div class="demo-step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <h4>Configura tu Contexto</h4>
+                            <p>Elige dónde estás y de cuánto tiempo dispones. Pikisports creará el desafío óptimo.</p>
+                        </div>
+                    </div>
+                    <div class="demo-step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <h4>Haz el Desafío</h4>
+                            <p>Simula el temporizador interactivo. Sigue las breves instrucciones técnicas.</p>
+                        </div>
+                    </div>
+                    <div class="demo-step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <h4>Consigue XP y Logros</h4>
+                            <p>¡Desbloquea medallas y acumula días de racha saludable!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simulator Device Mockup -->
+            <div class="simulator-device">
+                <div class="simulator-notch"></div>
+                <div class="simulator-screen">
+                    
+                    <!-- State 1: Configurator -->
+                    <div id="state-config" class="screen-state">
+                        <div>
+                            <h3 class="state-title" style="font-size: 1.5rem; margin-top: 1rem;">¿Listo para moverte?</h3>
+                            <p class="state-desc" style="margin-bottom: 1.5rem;">Selecciona tus condiciones actuales para generar un desafío inmediato.</p>
+                            
+                            <div class="setup-scroll" style="height: 250px;">
+                                <!-- Location Selector -->
+                                <div class="config-group">
+                                    <span class="config-label">¿Dónde estás?</span>
+                                    <div class="selector-grid" id="location-selector">
+                                        <div class="selector-item selected" data-value="Universidad">
+                                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
+                                            <span>Facultad</span>
+                                        </div>
+                                        <div class="selector-item" data-value="Oficina">
+                                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0V9a2 2 0 012-2h2a2 2 0 012 2v12m-6 0h6"/></svg>
+                                            <span>Oficina</span>
+                                        </div>
+                                        <div class="selector-item" data-value="Casa">
+                                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                                            <span>Casa</span>
+                                        </div>
+                                        <div class="selector-item" data-value="Aire libre">
+                                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                                            <span>Al aire libre</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Time Selector -->
+                                <div class="config-group">
+                                    <span class="config-label">¿Cuánto tiempo tienes?</span>
+                                    <div class="selector-grid" id="time-selector">
+                                        <div class="selector-item selected" data-value="5">
+                                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                            <span>5 Minutos</span>
+                                        </div>
+                                        <div class="selector-item" data-value="10">
+                                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                            <span>10 Minutos</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Equipment Selector -->
+                                <div class="config-group">
+                                    <span class="config-label">¿Qué tienes disponible?</span>
+                                    <div class="selector-grid" id="equip-selector">
+                                        <div class="selector-item selected" data-value="Escaleras">
+                                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5H4v14h14v-9M13 5v4h4M13 5h4M13 9H9v6h6v-2"/></svg>
+                                            <span>Escaleras</span>
+                                        </div>
+                                        <div class="selector-item" data-value="Silla">
+                                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7h-9V4c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                                            <span>Silla</span>
+                                        </div>
+                                        <div class="selector-item" data-value="Nada específico">
+                                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+                                            <span>Nada</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" id="btn-generate">Generar Desafío</button>
+                    </div>
+
+                    <!-- State 2: Active Training / Timer -->
+                    <div id="state-timer" class="screen-state hidden">
+                        <div class="routine-display-card">
+                            <span class="mockup-challenge-badge" id="timer-badge">Facultad • Escaleras</span>
+                            <div class="routine-title" id="timer-title">Subida de Escaleras</div>
+                            <div class="routine-instruction" id="timer-instruction">Sube y baja a ritmo constante por la escalera de tu pabellón.</div>
+                        </div>
+
+                        <div class="timer-container">
+                            <div class="timer-circle-wrap">
+                                <svg width="200" height="200" viewBox="0 0 200 200">
+                                    <circle class="timer-ring-bg" cx="100" cy="100" r="65"/>
+                                    <circle class="timer-ring-progress" id="timer-progress" cx="100" cy="100" r="65" stroke-dasharray="408" stroke-dashoffset="0"/>
+                                </svg>
+                                <div class="timer-text" id="timer-text">05:00</div>
+                            </div>
+                            <p style="font-size: 0.8rem; text-align: center; max-width: 250px; color: var(--text-secondary);">Mantén una postura erguida. Concéntrate en el movimiento fluido.</p>
+                        </div>
+
+                        <div class="timer-controls">
+                            <button class="btn btn-secondary" id="btn-pause">Pausar</button>
+                            <button class="btn btn-danger" id="btn-skip">Detener</button>
+                        </div>
+                    </div>
+
+                    <!-- State 3: Completion / Success -->
+                    <div id="state-success" class="screen-state hidden" style="position: relative;">
+                        <!-- Confetti container -->
+                        <div id="confetti-container" style="position: absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; overflow:hidden;"></div>
+                        
+                        <div class="success-container">
+                            <div class="success-icon-wrap">
+                                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                            </div>
+                            <h3 class="gradient-text" style="font-size: 1.6rem; line-height: 1.2;">¡Excelente Trabajo!</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">Has completado tu activación diaria.</p>
+
+                            <div class="xp-badge">+150 XP Ganados</div>
+
+                            <div class="stats-summary">
+                                <div class="summary-card">
+                                    <div class="summary-val">8</div>
+                                    <div class="summary-lbl">Racha Días</div>
+                                </div>
+                                <div class="summary-card">
+                                    <div class="summary-val blue">13</div>
+                                    <div class="summary-lbl">Nivel App</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary" id="btn-success-finish">Volver al Inicio</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Wellness / Recipes section removed -->
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq" style="border-top: 1px solid var(--border-color); background-color: rgba(255, 255, 255, 0.005);">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-header">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Todo lo que necesitas saber para empezar a moverte con Pikisports.</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué es Pikisports?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pikisports es una aplicación diseñada para combatir el sedentarismo urbano integrando la actividad física directamente en tu rutina diaria. En lugar de exigir rutinas extensas y rígidas, te propone pequeños retos contextuales adaptados a tu ubicación y tiempo disponible.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Necesito equipamiento para usar la app?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, ninguno. Pikisports aprovecha lo que tienes a tu alrededor en el momento: escaleras de la facultad, la silla de tu oficina, o simplemente espacio para estirarte y caminar. Está diseñada para encajar con fricción cero en cualquier entorno urbano.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cómo funciona el sistema de niveles y XP?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cada desafío que completas te otorga puntos de experiencia (XP) basados en la duración y el tipo de esfuerzo. Al acumular XP, subes de nivel tu perfil. Si te mantienes activo diariamente, incrementas tu racha de días consecutivos saludables, lo cual desbloquea logros especiales en tu perfil.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Tengo que compartir obligatoriamente mi progreso?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. La parte social de la app es completamente opcional y tiene un enfoque comunitario para motivar a quienes disfrutan de compartir su esfuerzo diario. Tus datos pueden mantenerse de forma privada en tu celular si así lo prefieres.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (Downloads) -->
+    <section class="cta-section reveal-on-scroll" id="descargar" style="border-top: 1px solid var(--border-color); overflow: hidden; position: relative;">
+        <div class="container cta-grid">
+            <div class="cta-content">
+                <h2 class="cta-title gradient-text glow-text">¿Listo para transformar tu rutina?</h2>
+                <p class="cta-desc">Disponible gratis para iOS y Android. Únete a miles de personas que ya combaten el sedentarismo integrando pequeños logros de movimiento en su vida cotidiana.</p>
+                
+                <div class="app-store-badges">
+                    <!-- App Store Badge -->
+                    <div class="store-badge" style="cursor: pointer;">
+                        <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.17.67-2.88 1.39-.62.71-1.16 1.85-1.01 2.96 1.12.09 2.24-.58 2.9-1.39z"/>
+                        </svg>
+                        <div class="store-text">
+                            <span>Consíguelo en el</span>
+                            <strong>App Store</strong>
+                        </div>
+                    </div>
+
+                    <!-- Google Play Badge -->
+                    <div class="store-badge" style="cursor: pointer;">
+                        <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5.25 3.05c-.21.21-.35.54-.35.95v16c0 .41.14.74.35.95l.07.07L14.3 12.07v-.15L5.32 2.98l-.07.07zm11.23 6.64l-3.18-1.81v3.62l3.18-1.81zM5.92 20.36L14 12.28l2.5 2.5-9.66 5.5c-.5.29-1.05-.09-.92-.92zm0-16.72c-.13-.83.42-1.21.92-.92l9.66 5.5-2.5 2.5L5.92 3.64z"/>
+                        </svg>
+                        <div class="store-text">
+                            <span>DISPONIBLE EN</span>
+                            <strong>Google Play</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Real Female Athlete Image with Glow -->
+            <div class="cta-image-container">
+                <div class="cta-athlete-glow-bg"></div>
+                <img src="transform_everyday.png" alt="Transforma tu rutina diaria" class="cta-athlete-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="#" class="logo-wrap" style="display: inline-block; margin-bottom: 1.5rem;">
+                        <img src="logo_pikirun.png" alt="Pikisports Logo" class="brand-logo-img">
+                    </a>
+                    <p>Aplicación móvil y comunidad diseñada para combatir el sedentarismo integrando el movimiento activo en la rutina cotidiana de las personas.</p>
+                    <div class="footer-social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.5 12 3.5 12 3.5s-7.518 0-9.388.553a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11C4.482 20.5 12 20.5 12 20.5s7.518 0 9.388-.553a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Producto</h4>
+                    <ul>
+                        <li><a href="#caracteristicas">Características</a></li>
+                        <li><a href="#stats-globales">Estadísticas</a></li>
+                        <li><a href="#comunidad">Comunidad</a></li>
+                        <li><a href="#descargar">Descargar</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pikisports. Todos los derechos reservados. Desarrollado por Thiago Bibiloni, Paulina Diaz, Francisco Fafian y Nicolas Oshiro.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripting Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
